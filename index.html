@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Premium Car Rentals in Georgia. Drive with style and comfort across Atlanta, Savannah, and Augusta.">
+    <title>Peach State Drive Rentals | Drive Georgia in Style</title>
+    
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚗</text></svg>">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <i class="fas fa-car-side"></i> Peach State <span>Drive</span>
+        </div>
+        
+        <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+
+        <nav id="navbar">
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#fleet">Our Fleet</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#fleet" class="btn" style="padding: 10px 20px; font-size: 0.9rem;">Book Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>Drive Georgia in Style</h1>
+        <p>Affordable, Reliable, and Luxurious Car Rentals across Atlanta, Savannah, and Augusta.</p>
+        <a href="#fleet" class="btn">View Premium Fleet</a>
+    </section>
+
+    <section id="how-it-works" class="section-padding">
+        <div class="text-center">
+            <h2 class="section-title">How It Works</h2>
+            <p style="margin-bottom: 50px;">Rent your dream car in 4 simple steps.</p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 30px; text-align: center;">
+            <div class="step-card">
+                <i class="fas fa-car" style="font-size: 2.5rem; color: var(--accent-peach); margin-bottom: 20px;"></i>
+                <h3 style="font-family: var(--font-heading); margin-bottom: 10px;">1. Choose a Car</h3>
+                <p>Browse our diverse fleet and find the perfect vehicle for your trip.</p>
+            </div>
+            <div class="step-card">
+                <i class="fas fa-calendar-check" style="font-size: 2.5rem; color: var(--accent-peach); margin-bottom: 20px;"></i>
+                <h3 style="font-family: var(--font-heading); margin-bottom: 10px;">2. Select Dates</h3>
+                <p>Pick your rental dates. We offer flexible daily to monthly options.</p>
+            </div>
+            <div class="step-card">
+                <i class="fas fa-id-card" style="font-size: 2.5rem; color: var(--accent-peach); margin-bottom: 20px;"></i>
+                <h3 style="font-family: var(--font-heading); margin-bottom: 10px;">3. Upload Documents</h3>
+                <p>Securely upload your Driver's License and ID for verification.</p>
+            </div>
+             <div class="step-card">
+                <i class="fas fa-key" style="font-size: 2.5rem; color: var(--accent-peach); margin-bottom: 20px;"></i>
+                <h3 style="font-family: var(--font-heading); margin-bottom: 10px;">4. Pick Up & Pay</h3>
+                <p>Pay at the counter upon pickup. (Online payment coming soon!)</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="fleet" class="section-padding bg-light">
+        <div class="text-center">
+            <h2 class="section-title">Our Premium Fleet</h2>
+            <p style="margin-bottom: 30px; color: #666;">Choose from our diverse collection of high-end and economy vehicles.</p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="all">All Cars</button>
+            <button class="filter-btn" data-filter="Economy">Economy</button>
+            <button class="filter-btn" data-filter="Luxury">Luxury</button>
+            <button class="filter-btn" data-filter="AWD">SUVs / AWD</button>
+            <button class="filter-btn" data-filter="Van">Vans</button>
+        </div>
+
+        <div class="fleet-grid">
+
+            <!-- Car 1: Corolla -->
+            <div class="car-card">
+                <div class="car-img-wrapper">
+                    <span class="car-tag">Economy</span>
+                    <img src="corolla.jpg" alt="Toyota Corolla" class="car-img">
+                </div>
+                <div class="car-details">
+                    <h3>Toyota Corolla</h3>
+                    <div class="car-desc">
+                        <span><i class="fas fa-user"></i> 5 People</span>
+                        <span><i class="fas fa-suitcase"></i> 3 Bags</span>
+                    </div>
+                    <div class="car-footer">
+                        <div class="price-container">
+                            <span class="price-main">$60<small>/day</small></span>
+                            <span class="price-sub">$400/wk | $1200/mo</span>
+                        </div>
+                        <button class="btn-outline book-trigger" data-car="Toyota Corolla">Book</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Car 2: Jetta -->
+             <div class="car-card">
+                <div class="car-img-wrapper">
+                    <span class="car-tag">Economy</span>
+                    <img src="volkswagen.jpg" alt="Volkswagen Jetta" class="car-img">
+                </div>
+                <div class="car-details">
+                    <h3>Volkswagen Jetta</h3>
+                    <div class="car-desc">
+                        <span><i class="fas fa-user"></i> 5 People</span>
+                        <span><i class="fas fa-suitcase"></i> 3 Bags</span>
+                    </div>
+                    <div class="car-footer">
+                        <div class="price-container">
+                            <span class="price-main">$70<small>/day</small></span>
+                            <span class="price-sub">$450/wk | $1300/mo</span>
+                        </div>
+                        <button class="btn-outline book-trigger" data-car="Volkswagen Jetta">Book</button>
+                    </div>
+                </div>
+            </div>
+
+             <!-- Car 3: Audi A5 -->
+             <div class="car-card">
+                <div class="car-img-wrapper">
+                    <span class="car-tag">Luxury</span>
+                    <img src="audi.jpg" alt="Audi A5 Sport Back" class="car-img">
+                </div>
+                <div class="car-details">
+                    <h3>Audi A5 Sport Back</h3>
+                    <div class="car-desc">
+                        <span><i class="fas fa-user"></i> 5 People</span>
+                        <span><i class="fas fa-suitcase"></i> 3 Bags</span>
+                    </div>
+                    <div class="car-footer">
+                         <div class="price-container">
+                            <span class="price-main">$155<small>/day</small></span>
+                            <span class="price-sub">$1000/wk | $3200/mo</span>
+                        </div>
+                        <button class="btn-outline book-trigger" data-car="Audi A5 Sport Back">Book</button>
+                    </div>
+                </div>
+            </div>
+
+             <!-- Car 4: Prius -->
+             <div class="car-card">
+                <div class="car-img-wrapper">
+                    <span class="car-tag">Economy</span>
+                    <img src="prias.jpg" alt="Toyota Prius" class="car-img">
+                </div>
+                <div class="car-details">
+                    <h3>Toyota Prius</h3>
+                    <div class="car-desc">
+                        <span><i class="fas fa-user"></i> 5 People</span>
+                        <span><i class="fas fa-gas-pump"></i> Hybrid</span>
+                    </div>
+                    <div class="car-footer">
+                        <div class="price-container">
+                            <span class="price-main">$55<small>/day</small></span>
+                            <span class="price-sub">$330/wk | $1200/mo</span>
+                        </div>
+                        <button class="btn-outline book-trigger" data-car="Toyota Prius">Book</button>
+                    </div>
+                </div>
+            </div>
+
+             <!-- Car 5: BMW 228I -->
+             <div class="car-card">
+                <div class="car-img-wrapper">
+                    <span class="car-tag">Luxury</span>
+                    <img src="bmw22.jpg" alt="BMW 228I Grancoupe" class="car-img">
+                </div>
+                <div class="car-details">
+                    <h3>BMW 228I Grancoupe</h3>
+                    <div class="car-desc">
+                        <span><i class="fas fa-user"></i> 5 People</span>
+                        <span><i class="fas fa-suitcase"></i> 2 Bags</span>
+                    </div>
+                    <div class="car-footer">
+                        <div class="price-container">
+                            <span class="price-main">$150<small>/day</small></span>
+                            <span class="price-sub">$980/wk | $3000/mo</span>
+                        </div>
+                        <button class="btn-outline book-trigger" data-car="BMW 228I Grancoupe">Book</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Car 6: Malibu -->
+            <div class="car-card">
+                <div class="car-img-wrapper">
+                    <span class="car-tag">Economy</span>
+                    <img src="chev.jpg" alt="Chevrolet Malibu" class="car-img">
+                </div>
+                <div class="car-details">
+                    <h3>Chevrolet Malibu</h3>
+                    <div class="car-desc">
+                        <span><i class="fas fa-user"></i> 4 People</span>
+                        <span><i class="fas fa-suitcase"></i> 4 Bags</span>
+                    </div>
+                    <div class="car-footer">
+                        <div class="price-container">
+                            <span class="price-main">$60<small>/day</small></span>
+                            <span class="price-sub">$420/wk | $1300/mo</span>
+                        </div>
+                        <button class="btn-outline book-trigger" data-car="Chevrolet Malibu">Book</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Car 7: Jeep -->
+            <div class="car-card">
+                <div class="car-img-wrapper">
+                    <span class="car-tag">AWD / SUV</span>
+                    <img src="jeep.jpg" alt="Jeep Wrangler" class="car-img">
+                </div>
+                <div class="car-details">
+                    <h3>Jeep Wrangler</h3>
+                    <div class="car-desc">
+                        <span><i class="fas fa-user"></i> 4 People</span>
+                        <span><i class="fas fa-mountain"></i> Off-road</span>
+                    </div>
+                    <div class="car-footer">
+                        <div class="price-container">
+                            <span class="price-main">$100<small>/day</small></span>
+                            <span class="price-sub">$800/wk | $2900/mo</span>
+                        </div>
+                        <button class="btn-outline book-trigger" data-car="Jeep Wrangler">Book</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Car 8: F150 -->
+            <div class="car-card">
+                <div class="car-img-wrapper">
+                    <span class="car-tag">AWD / Truck</span>
+                    <img src="ford.jpg" alt="Ford F150" class="car-img">
+                </div>
+                <div class="car-details">
+                    <h3>Ford F150</h3>
+                    <div class="car-desc">
+                        <span><i class="fas fa-user"></i> 5 People</span>
+                         <span><i class="fas fa-truck-pickup"></i> Heavy Duty</span>
+                    </div>
+                    <div class="car-footer">
+                        <div class="price-container">
+                            <span class="price-main">$120<small>/day</small></span>
+                            <span class="price-sub">$780/wk | $2600/mo</span>
+                        </div>
+                        <button class="btn-outline book-trigger" data-car="Ford F150">Book</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Car 9: Equinox -->
+            <div class="car-card">
+                <div class="car-img-wrapper">
+                    <span class="car-tag">AWD / SUV</span>
+                    <img src="equinox.jpg" alt="Chevrolet Equinox" class="car-img">
+                </div>
+                <div class="car-details">
+                    <h3>Chevrolet Equinox</h3>
+                    <div class="car-desc">
+                        <span><i class="fas fa-user"></i> 5 People</span>
+                        <span><i class="fas fa-suitcase"></i> 5 Bags</span>
+                    </div>
+                    <div class="car-footer">
+                        <div class="price-container">
+                            <span class="price-main">$75<small>/day</small></span>
+                            <span class="price-sub">$480/wk | $1700/mo</span>
+                        </div>
+                        <button class="btn-outline book-trigger" data-car="Chevrolet Equinox">Book</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Car 10: Ford Transit -->
+            <div class="car-card">
+                <div class="car-img-wrapper">
+                    <span class="car-tag">Van</span>
+                    <img src="van.jpg" alt="Ford Transit Wagon" class="car-img">
+                </div>
+                <div class="car-details">
+                    <h3>Ford Transit Wagon</h3>
+                    <div class="car-desc">
+                        <span><i class="fas fa-users"></i> 15 People</span>
+                        <span><i class="fas fa-bus"></i> Spacious</span>
+                    </div>
+                    <div class="car-footer">
+                        <div class="price-container">
+                            <span class="price-main">$190<small>/day</small></span>
+                            <span class="price-sub">$1250/wk | $4000/mo</span>
+                        </div>
+                        <button class="btn-outline book-trigger" data-car="Ford Transit Wagon">Book</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Car 11: Sprinter -->
+            <div class="car-card">
+                <div class="car-img-wrapper">
+                    <span class="car-tag">Van</span>
+                    <img src="van2.jpg" alt="Mercedes Benz Sprinter" class="car-img">
+                </div>
+                <div class="car-details">
+                    <h3>Mercedes Benz Sprinter</h3>
+                    <div class="car-desc">
+                        <span><i class="fas fa-users"></i> 12 People</span>
+                        <span><i class="fas fa-star"></i> Luxury Van</span>
+                    </div>
+                    <div class="car-footer">
+                        <div class="price-container">
+                            <span class="price-main">$260<small>/day</small></span>
+                            <span class="price-sub">$1650/wk | $5800/mo</span>
+                        </div>
+                        <button class="btn-outline book-trigger" data-car="Mercedes Benz Sprinter">Book</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Car 12: BMW 4 Series -->
+            <div class="car-card">
+                <div class="car-img-wrapper">
+                    <span class="car-tag">Luxury / Electric</span>
+                    <img src="merc.jpg" alt="BMW 4 Series" class="car-img">
+                </div>
+                <div class="car-details">
+                    <h3>BMW 4 Series</h3>
+                    <div class="car-desc">
+                        <span><i class="fas fa-user"></i> 4 People</span>
+                        <span><i class="fas fa-bolt"></i> Performance</span>
+                    </div>
+                    <div class="car-footer">
+                        <div class="price-container">
+                            <span class="price-main">$180<small>/day</small></span>
+                            <span class="price-sub">$1200/wk | $4000/mo</span>
+                        </div>
+                        <button class="btn-outline book-trigger" data-car="BMW 4 Series">Book</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Car 13: Honda Accord -->
+            <div class="car-card">
+                <div class="car-img-wrapper">
+                    <span class="car-tag">Economy</span>
+                    <img src="chev.jpg" alt="Honda Accord" class="car-img">
+                </div>
+                <div class="car-details">
+                    <h3>Honda Accord</h3>
+                    <div class="car-desc">
+                        <span><i class="fas fa-user"></i> 5 People</span>
+                        <span><i class="fas fa-suitcase"></i> 3 Bags</span>
+                    </div>
+                    <div class="car-footer">
+                        <div class="price-container">
+                            <span class="price-main">$65<small>/day</small></span>
+                            <span class="price-sub">$430/wk | $1250/mo</span>
+                        </div>
+                        <button class="btn-outline book-trigger" data-car="Honda Accord">Book</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Car 14: Nissan Altima -->
+            <div class="car-card">
+                <div class="car-img-wrapper">
+                    <span class="car-tag">Economy</span>
+                    <img src="corolla.jpg" alt="Nissan Altima" class="car-img">
+                </div>
+                <div class="car-details">
+                    <h3>Nissan Altima</h3>
+                    <div class="car-desc">
+                        <span><i class="fas fa-user"></i> 5 People</span>
+                        <span><i class="fas fa-suitcase"></i> 3 Bags</span>
+                    </div>
+                    <div class="car-footer">
+                        <div class="price-container">
+                            <span class="price-main">$62<small>/day</small></span>
+                            <span class="price-sub">$410/wk | $1220/mo</span>
+                        </div>
+                        <button class="btn-outline book-trigger" data-car="Nissan Altima">Book</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Car 15: Hyundai Elantra -->
+            <div class="car-card">
+                <div class="car-img-wrapper">
+                    <span class="car-tag">Economy</span>
+                    <img src="prias.jpg" alt="Hyundai Elantra" class="car-img">
+                </div>
+                <div class="car-details">
+                    <h3>Hyundai Elantra</h3>
+                    <div class="car-desc">
+                        <span><i class="fas fa-user"></i> 5 People</span>
+                        <span><i class="fas fa-gas-pump"></i> Efficient</span>
+                    </div>
+                    <div class="car-footer">
+                        <div class="price-container">
+                            <span class="price-main">$58<small>/day</small></span>
+                            <span class="price-sub">$380/wk | $1100/mo</span>
+                        </div>
+                        <button class="btn-outline book-trigger" data-car="Hyundai Elantra">Book</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Car 16: Mercedes-Benz S-Class (Luxury) -->
+            <div class="car-card">
+                <div class="car-img-wrapper">
+                    <span class="car-tag">Luxury</span>
+                    <img src="merc.jpg" alt="Mercedes S-Class" class="car-img">
+                </div>
+                <div class="car-details">
+                    <h3>Mercedes-Benz S-Class</h3>
+                    <div class="car-desc">
+                        <span><i class="fas fa-user"></i> 5 People</span>
+                        <span><i class="fas fa-star"></i> Ultimate Luxury</span>
+                    </div>
+                    <div class="car-footer">
+                        <div class="price-container">
+                            <span class="price-main">$250<small>/day</small></span>
+                            <span class="price-sub">$1600/wk | $5000/mo</span>
+                        </div>
+                        <button class="btn-outline book-trigger" data-car="Mercedes-Benz S-Class">Book</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Car 17: Range Rover Sport (Luxury SUV) -->
+            <div class="car-card">
+                <div class="car-img-wrapper">
+                    <span class="car-tag">Luxury / AWD</span>
+                    <img src="jeep.jpg" alt="Range Rover Sport" class="car-img">
+                </div>
+                <div class="car-details">
+                    <h3>Range Rover Sport</h3>
+                    <div class="car-desc">
+                        <span><i class="fas fa-user"></i> 5 People</span>
+                        <span><i class="fas fa-mountain"></i> Luxury SUV</span>
+                    </div>
+                    <div class="car-footer">
+                        <div class="price-container">
+                            <span class="price-main">$220<small>/day</small></span>
+                            <span class="price-sub">$1400/wk | $4500/mo</span>
+                        </div>
+                        <button class="btn-outline book-trigger" data-car="Range Rover Sport">Book</button>
+                    </div>
+                </div>
+            </div>
+
+             <!-- Car 18: Chevrolet Express (Van) -->
+            <div class="car-card">
+                <div class="car-img-wrapper">
+                    <span class="car-tag">Van</span>
+                    <img src="van.jpg" alt="Chevrolet Express" class="car-img">
+                </div>
+                <div class="car-details">
+                    <h3>Chevrolet Express</h3>
+                    <div class="car-desc">
+                        <span><i class="fas fa-users"></i> 12 People</span>
+                        <span><i class="fas fa-bus"></i> Passenger Van</span>
+                    </div>
+                    <div class="car-footer">
+                        <div class="price-container">
+                            <span class="price-main">$180<small>/day</small></span>
+                            <span class="price-sub">$1100/wk | $3800/mo</span>
+                        </div>
+                        <button class="btn-outline book-trigger" data-car="Chevrolet Express">Book</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="about" class="section-padding">
+        <div class="about-grid">
+            <div class="about-content">
+                <h2 class="section-title" style="text-align: left; margin: 0 0 30px;">Why Choose Us?</h2>
+                <p>At Peach State Drive Rentals, we're more than just a car rental company. We are your partners in exploring Georgia. Whether you need a reliable commuter, a luxury experience, or a van for a family trip, we ensure every mile is smooth and trouble-free.</p>
+                
+                <ul class="service-list">
+                    <li><i class="fas fa-check-circle"></i> <strong>Pristine Condition:</strong> Every car is sanitized and detailed.</li>
+                    <li><i class="fas fa-check-circle"></i> <strong>No Hidden Fees:</strong> What you see is what you pay.</li>
+                    <li><i class="fas fa-check-circle"></i> <strong>Statewide Service:</strong> Serving Atlanta, Savannah, Macon & Athens.</li>
+                </ul>
+            </div>
+            <div class="about-image" style="background: var(--primary-navy); height: 300px; border-radius: 20px; box-shadow: var(--shadow-hover); overflow: hidden;">
+                 <img src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Driving" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.8;">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section-padding bg-light">
+        <div class="text-center">
+            <h2 class="section-title">Get in Touch</h2>
+            <p>Questions? Need a custom quote? We're here to help.</p>
+        </div>
+        
+        <div class="contact-details" style="display: flex; justify-content: center; gap: 50px; flex-wrap: wrap; margin-top: 40px; text-align: left;">
+            <div class="contact-item" style="display: flex; align-items: center;">
+                <i class="fas fa-envelope" style="font-size: 1.5rem; color: var(--accent-peach); margin-right: 15px;"></i>
+                <div>
+                    <strong>Email Us</strong><br>
+                    peachstatedrive01@gmail.com
+                </div>
+            </div>
+            <div class="contact-item" style="display: flex; align-items: center;">
+                <i class="fas fa-phone" style="font-size: 1.5rem; color: var(--accent-peach); margin-right: 15px;"></i>
+                <div>
+                    <strong>Call Us</strong><br>
+                    (555) 123-4567
+                </div>
+            </div>
+            <div class="contact-item" style="display: flex; align-items: center;">
+                <i class="fas fa-map-marker-alt" style="font-size: 1.5rem; color: var(--accent-peach); margin-right: 15px;"></i>
+                <div>
+                    <strong>Mailing Address</strong><br>
+                    P.O. Box 4400<br>
+                    Atlanta, GA 30301
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Peach State Drive Rentals. All Rights Reserved.</p>
+        <p style="margin-top: 10px;">
+            <a href="terms.html">Terms & Conditions</a> | 
+            <a href="privacy.html">Privacy Policy</a>
+        </p>
+    </footer>
+
+    <!-- BOOKING MODAL -->
+    <div id="bookingModal" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="text-center">
+                <h3 id="modalCarName" style="color: var(--primary-navy); margin-bottom: 20px;">Complete Your Booking</h3>
+            </div>
+            
+            <form id="rentalForm">
+                <div class="form-grid">
+                    <div class="form-group full-width">
+                        <label>Full Name</label>
+                        <input type="text" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Email Address</label>
+                        <input type="email" placeholder="john@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Phone Number</label>
+                        <input type="tel" placeholder="(555) 123-4567" required>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label>Vehicle Selected</label>
+                        <select id="carSelect" required>
+                            <option value="" disabled>Choose a vehicle...</option>
+                            <option value="Toyota Corolla">Toyota Corolla</option>
+                            <option value="Volkswagen Jetta">Volkswagen Jetta</option>
+                            <option value="Audi A5 Sport Back">Audi A5 Sport Back</option>
+                            <option value="Toyota Prius">Toyota Prius</option>
+                            <option value="BMW 228I Grancoupe">BMW 228I Grancoupe</option>
+                            <option value="Chevrolet Malibu">Chevrolet Malibu</option>
+                            <option value="Jeep Wrangler">Jeep Wrangler</option>
+                            <option value="Ford F150">Ford F150</option>
+                            <option value="Chevrolet Equinox">Chevrolet Equinox</option>
+                            <option value="Ford Transit Wagon">Ford Transit Wagon</option>
+                            <option value="Mercedes Benz Sprinter">Mercedes Benz Sprinter</option>
+                            <option value="BMW 4 Series">BMW 4 Series</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Rental Plan</label>
+                        <select id="ratePlan" required>
+                            <option value="Daily">Daily Rate</option>
+                            <option value="Weekly">Weekly Lease</option>
+                            <option value="Monthly">Monthly Lease</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Pickup Location</label>
+                        <select id="pickupLocation" required>
+                            <option value="Atlanta (Airport/City)">Atlanta</option>
+                            <option value="Savannah">Savannah</option>
+                            <option value="Augusta">Augusta</option>
+                            <option value="Macon">Macon</option>
+                            <option value="Athens">Athens</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Pickup Date</label>
+                        <input type="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Drop-off Date</label>
+                        <input type="date" required>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label>Upload ID & License</label>
+                        <input type="file" multiple accept="image/*,.pdf" required>
+                    </div>
+                    
+                    <div class="form-group full-width">
+                         <label>Payment Method</label>
+                         <select disabled style="background: #eee;">
+                             <option>Pay at Pickup (Online Coming Soon)</option>
+                         </select>
+                    </div>
+                </div>
+                <button type="submit" class="btn full-width" style="margin-top: 25px; width: 100%;">Submit Request</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
