@@ -9,7 +9,7 @@
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚗</text></svg>">
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
     <!-- Custom CSS -->
@@ -36,9 +36,31 @@
     </header>
 
     <section id="home" class="hero">
-        <h1>Drive Georgia in Style</h1>
-        <p>Affordable, Reliable, and Luxurious Car Rentals across Atlanta, Savannah, and Augusta.</p>
-        <a href="#fleet" class="btn">View Premium Fleet</a>
+        <div class="hero-inner">
+            <div class="hero-copy">
+                <div class="eyebrow"><i class="fas fa-star"></i> Premium rentals across Georgia</div>
+                <h1>Drive Georgia in Style</h1>
+                <p>Reliable, polished, and flexible car rentals for business trips, weekend escapes, and long-term travel across Atlanta, Savannah, Augusta, and beyond.</p>
+                <div class="hero-actions">
+                    <a href="#fleet" class="btn">View Premium Fleet</a>
+                    <a href="#contact" class="btn-outline">Speak With Us</a>
+                </div>
+            </div>
+            <div class="hero-highlights">
+                <div class="highlight-card">
+                    <strong>Fast booking</strong>
+                    <span>Choose a car, request dates, and get moving without unnecessary steps.</span>
+                </div>
+                <div class="highlight-card">
+                    <strong>Clean fleet</strong>
+                    <span>Each vehicle is prepared with a strong focus on presentation and reliability.</span>
+                </div>
+                <div class="highlight-card">
+                    <strong>Flexible trips</strong>
+                    <span>Daily, weekly, and monthly rental options tailored to the way clients actually travel.</span>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section id="how-it-works" class="section-padding">
@@ -47,34 +69,34 @@
             <p style="margin-bottom: 50px;">Rent your dream car in 4 simple steps.</p>
         </div>
 
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 30px; text-align: center;">
+        <div class="feature-grid">
             <div class="step-card">
-                <i class="fas fa-car" style="font-size: 2.5rem; color: var(--accent-peach); margin-bottom: 20px;"></i>
-                <h3 style="font-family: var(--font-heading); margin-bottom: 10px;">1. Choose a Car</h3>
+                <i class="fas fa-car" style="font-size: 2.2rem; color: var(--accent); margin-bottom: 18px;"></i>
+                <h3>1. Choose a Car</h3>
                 <p>Browse our diverse fleet and find the perfect vehicle for your trip.</p>
             </div>
             <div class="step-card">
-                <i class="fas fa-calendar-check" style="font-size: 2.5rem; color: var(--accent-peach); margin-bottom: 20px;"></i>
-                <h3 style="font-family: var(--font-heading); margin-bottom: 10px;">2. Select Dates</h3>
+                <i class="fas fa-calendar-check" style="font-size: 2.2rem; color: var(--accent); margin-bottom: 18px;"></i>
+                <h3>2. Select Dates</h3>
                 <p>Pick your rental dates. We offer flexible daily to monthly options.</p>
             </div>
             <div class="step-card">
-                <i class="fas fa-id-card" style="font-size: 2.5rem; color: var(--accent-peach); margin-bottom: 20px;"></i>
-                <h3 style="font-family: var(--font-heading); margin-bottom: 10px;">3. Upload Documents</h3>
+                <i class="fas fa-id-card" style="font-size: 2.2rem; color: var(--accent); margin-bottom: 18px;"></i>
+                <h3>3. Upload Documents</h3>
                 <p>Securely upload your Driver's License and ID for verification.</p>
             </div>
              <div class="step-card">
-                <i class="fas fa-key" style="font-size: 2.5rem; color: var(--accent-peach); margin-bottom: 20px;"></i>
-                <h3 style="font-family: var(--font-heading); margin-bottom: 10px;">4. Pick Up & Pay</h3>
+                <i class="fas fa-key" style="font-size: 2.2rem; color: var(--accent); margin-bottom: 18px;"></i>
+                <h3>4. Pick Up & Pay</h3>
                 <p>Pay at the counter upon pickup. (Online payment coming soon!)</p>
             </div>
         </div>
     </section>
 
     <section id="fleet" class="section-padding bg-light">
-        <div class="text-center">
+        <div class="text-center section-shell">
             <h2 class="section-title">Our Premium Fleet</h2>
-            <p style="margin-bottom: 30px; color: #666;">Choose from our diverse collection of high-end and economy vehicles.</p>
+            <p>Choose from our diverse collection of high-end and economy vehicles.</p>
         </div>
 
         <!-- Filter Buttons -->
@@ -490,6 +512,7 @@
     <section id="about" class="section-padding">
         <div class="about-grid">
             <div class="about-content">
+                <div class="about-copy">
                 <h2 class="section-title" style="text-align: left; margin: 0 0 30px;">Why Choose Us?</h2>
                 <p>At Peach State Drive Rentals, we're more than just a car rental company. We are your partners in exploring Georgia. Whether you need a reliable commuter, a luxury experience, or a van for a family trip, we ensure every mile is smooth and trouble-free.</p>
                 
@@ -498,36 +521,37 @@
                     <li><i class="fas fa-check-circle"></i> <strong>No Hidden Fees:</strong> What you see is what you pay.</li>
                     <li><i class="fas fa-check-circle"></i> <strong>Statewide Service:</strong> Serving Atlanta, Savannah, Macon & Athens.</li>
                 </ul>
+                </div>
             </div>
-            <div class="about-image" style="background: var(--primary-navy); height: 300px; border-radius: 20px; box-shadow: var(--shadow-hover); overflow: hidden;">
-                 <img src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Driving" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.8;">
+            <div class="about-image">
+                 <img src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Driving">
             </div>
         </div>
     </section>
 
     <section id="contact" class="section-padding bg-light">
-        <div class="text-center">
+        <div class="text-center section-shell">
             <h2 class="section-title">Get in Touch</h2>
             <p>Questions? Need a custom quote? We're here to help.</p>
         </div>
         
-        <div class="contact-details" style="display: flex; justify-content: center; gap: 50px; flex-wrap: wrap; margin-top: 40px; text-align: left;">
-            <div class="contact-item" style="display: flex; align-items: center;">
-                <i class="fas fa-envelope" style="font-size: 1.5rem; color: var(--accent-peach); margin-right: 15px;"></i>
+        <div class="contact-grid">
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
                 <div>
                     <strong>Email Us</strong><br>
                     peachstatedrive01@gmail.com
                 </div>
             </div>
-            <div class="contact-item" style="display: flex; align-items: center;">
-                <i class="fas fa-phone" style="font-size: 1.5rem; color: var(--accent-peach); margin-right: 15px;"></i>
+            <div class="contact-item">
+                <i class="fas fa-phone"></i>
                 <div>
                     <strong>Call Us</strong><br>
                     (555) 123-4567
                 </div>
             </div>
-            <div class="contact-item" style="display: flex; align-items: center;">
-                <i class="fas fa-map-marker-alt" style="font-size: 1.5rem; color: var(--accent-peach); margin-right: 15px;"></i>
+            <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
                 <div>
                     <strong>Mailing Address</strong><br>
                     P.O. Box 4400<br>
@@ -539,7 +563,7 @@
 
     <footer>
         <p>&copy; 2024 Peach State Drive Rentals. All Rights Reserved.</p>
-        <p style="margin-top: 10px;">
+        <p>
             <a href="terms.html">Terms & Conditions</a> | 
             <a href="privacy.html">Privacy Policy</a>
         </p>
@@ -550,7 +574,7 @@
         <div class="modal-content">
             <span class="close-modal">&times;</span>
             <div class="text-center">
-                <h3 id="modalCarName" style="color: var(--primary-navy); margin-bottom: 20px;">Complete Your Booking</h3>
+                <h3 id="modalCarName" style="color: var(--navy); margin-bottom: 20px; font-family: var(--font-heading);">Complete Your Booking</h3>
             </div>
             
             <form id="rentalForm">
@@ -623,7 +647,7 @@
                     
                     <div class="form-group full-width">
                          <label>Payment Method</label>
-                         <select disabled style="background: #eee;">
+                        <select disabled style="background: #f4f5f7;">
                              <option>Pay at Pickup (Online payments Coming Soon)</option>
                          </select>
                     </div>

@@ -5,99 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terms & Conditions | Peach State Drive Rentals</title>
     
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    
-    <style>
-        /* --- BRAND COLORS & RESET --- */
-        :root {
-            --primary-navy: #0D1B2A;
-            --accent-peach: #FF7F50;
-            --bg-light: #F4F4F4;
-            --text-dark: #333333;
-            --font-heading: 'Montserrat', sans-serif;
-            --font-body: 'Open Sans', sans-serif;
-        }
-
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-
-        body {
-            font-family: var(--font-body);
-            color: var(--text-dark);
-            background-color: var(--bg-light);
-            line-height: 1.8; /* Increased line height for readability */
-        }
-
-        /* --- HEADER --- */
-        header {
-            background-color: var(--primary-navy);
-            color: white;
-            padding: 20px 5%;
-            text-align: center;
-        }
-
-        header h1 {
-            font-family: var(--font-heading);
-            font-size: 2rem;
-            margin-bottom: 10px;
-        }
-
-        .breadcrumb {
-            color: var(--accent-peach);
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 0.9rem;
-        }
-        
-        .breadcrumb:hover { text-decoration: underline; }
-
-        /* --- CONTENT CONTAINER --- */
-        .container {
-            max-width: 900px;
-            margin: 40px auto;
-            background: white;
-            padding: 50px;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-        }
-
-        /* --- TYPOGRAPHY --- */
-        h2 {
-            font-family: var(--font-heading);
-            color: var(--primary-navy);
-            border-bottom: 2px solid var(--accent-peach);
-            padding-bottom: 10px;
-            margin-top: 30px;
-            margin-bottom: 15px;
-            font-size: 1.4rem;
-        }
-
-        h2:first-of-type { margin-top: 0; }
-
-        p { margin-bottom: 15px; color: #555; }
-
-        ul { margin-bottom: 20px; padding-left: 20px; }
-        li { margin-bottom: 8px; color: #555; }
-
-        .highlight { font-weight: 600; color: var(--primary-navy); }
-
-        /* --- FOOTER --- */
-        footer {
-            text-align: center;
-            padding: 30px;
-            font-size: 0.85rem;
-            color: #888;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="legal-page">
 
-    <header>
+    <header class="legal-header">
         <a href="index.html" class="breadcrumb">← Back to Home</a>
         <h1>Terms & Conditions</h1>
         <p>Last Updated: October 2023</p>
     </header>
 
-    <div class="container">
+    <main class="legal-wrap">
+        <div class="legal-card">
         
         <p>Welcome to <strong>Peach State Drive Rentals</strong>. By booking a vehicle with us, you agree to comply with and be bound by the following terms and conditions. Please read them carefully before finalizing your reservation.</p>
 
@@ -146,10 +66,8 @@
         </ul>
         <p>Failure to report an accident promptly may result in forfeiture of insurance coverage and the Renter assuming full liability.</p>
 
-        <br>
-       
-
-    </div>
+        </div>
+    </main>
 
     <footer>
         &copy; 2024 Peach State Drive Rentals. All Rights Reserved.
